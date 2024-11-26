@@ -1,11 +1,16 @@
 {
   "development": {
-    "username": "postgres",
-    "password": "postgres",
-    "database": "sequelize_exercise",
-    "host": "127.0.0.1",
+    "username": "student",
+    "password": "ptudw@123",
+    "database": "sequelize_exercise_foxh",
+    "host": "dpg-csvb7laj1k6c73c3jk20-a.singapore-postgres.render.com",
     "dialect": "postgres",
-    "port": 5432
+    "dialectOptions": {
+    "ssl": {
+    "require": true,
+    "rejectUnauthorized": false
+      }
+    }
   },
   "test": {
     "username": "root",
