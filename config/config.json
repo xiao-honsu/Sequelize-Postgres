@@ -5,10 +5,11 @@
     "database": "sequelize_exercise_foxh",
     "host": "dpg-csvb7laj1k6c73c3jk20-a.singapore-postgres.render.com",
     "dialect": "postgres",
+    "port": 5432,
     "dialectOptions": {
     "ssl": {
-    "require": true,
-    "rejectUnauthorized": false
+      "require": true,
+      "rejectUnauthorized": false
       }
     }
   },
@@ -20,10 +21,13 @@
     "dialect": "mysql"
   },
   "production": {
-    "username": "root",
-    "password": null,
-    "database": "database_production",
-    "host": "127.0.0.1",
-    "dialect": "mysql"
+    "use_env_variable": "DATABASE_URL",
+    "dialect": "postgres",
+    "dialectOptions": {
+    "ssl": {
+      "require": true,
+      "rejectUnauthorized": false
+      }
+    }
   }
 }
